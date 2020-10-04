@@ -18,15 +18,15 @@ if( ( notaTesisAbogacia == 5 ) && ( notaTesisRedes == 9 ) ) {
 	alert("No se cumple alguna de las condiciones")
 }*/
 
+var sign = prompt("Cual es tu signo?");
 
-var notaTesis = prompt("Ingresa tu Nota de Tesis");
+if (sign == "Libra") {
+  console.log("Tu signo es igual al mio y es de Aire");
+} else if (sign == "Cancer" || sign == "Piscis" || sign == "Escorpio") {
+	console.log("Tu signo es diferente al mio y es de Agua")
 
-if (notaTesis == 10) {
-	alert("Obtuviste la nota maxima");
-} else if {
-	(notaTesis < 4)
-		alert("Tu Tesis esta desaprobada");
-	} else {
-		(notaTesis > 4)
-		alert("Tu tesis esta aprobada");
-	}
+} else  {
+	console.log("El signo es diferente al mio y es de Fuego o Tierra")
+
+}
+
