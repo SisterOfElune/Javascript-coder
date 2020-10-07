@@ -44,12 +44,25 @@ function sumar(){
 */
  //DIAS DE LA SEMANA
 
- function mostrarDiasEnLaPantalla(){
- 	var diasDeLaSemana = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo'];
- 	for(var i = 0; i < 7; i++){
- 		console.log(diasDeLaSemana[i]);
- 	}
- }
+ function diasPares (){
+    var dias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+
+    console.log(dias)
+    
+    var pares = [];
+
+    for(var i = 0 ; i < 7; i++){
+		if(i == 6){
+            alert("El ultimo día es: " + dias[6]);
+        }
+
+        if (i % 2 == 0) {
+            pares[i] = "El dia " + dias[i] + " es par\n";
+        }
+    }
+    
+    console.log(pares)
+}
 
 anime();
  function anime(){
