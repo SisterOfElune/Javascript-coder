@@ -57,7 +57,7 @@ function sumar(){
         }
 
         if (i % 2 == 0) {
-            pares[i] = "El dia " + dias[i] + " es par\n";
+            pares[i] = "El dia " + dias[i] +" es par\n";
         }
     }
     
